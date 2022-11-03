@@ -1,0 +1,15 @@
+<pre>Enter the total memory available (in Bytes) -- 1000
+Enter the block size (in Bytes) -- 200
+
+Enter the number of processes -- 2
+Enter memory required for process 1 (in Bytes)-- 44
+Enter memory required for process 2 (in Bytes)-- 55
+
+No. of Blocks available in memory--5
+
+PROCESS	MEMORYREQUIRED	ALLOCATED	INTERNALFRAGMENTATION
+ 1		44		YES	156
+ 2		55		YES	145
+
+Total Internal Fragmentation is 301
+Total External Fragmentation is 0<font color="#26A269"><b>s</b></font></pre>

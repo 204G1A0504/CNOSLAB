@@ -6,9 +6,8 @@
    Date of Execution: 8-11-2022
 */
 #include<stdio.h>
-#include<conio.h>
 #include<string.h>
-void main()
+int main()
 {
 int alloc[10][10],max[10][10];
 int avail[10],work[10],total[10];
@@ -16,7 +15,6 @@ int i,j,k,n,need[10][10];
 int m;
 int count=0,c=0;
 char finish[10];
-clrscr();
 printf("Enter the no. of processes and resources:");
 scanf("%d%d",&n,&m);
 for(i=0;i<=n;i++)
@@ -29,7 +27,6 @@ printf("Enter the allocation matrix:\n");
 for(i=0;i<n;i++)
 for(j=0;j<m;j++)
 scanf("%d",&alloc[i][j]);
-
 printf("Resource vector:");
 for(i=0;i<m;i++)
 scanf("%d",&total[i]);
@@ -67,10 +64,9 @@ count++;
 }
 }
 if(count!=n)
-
 goto A;
 else
 printf("\n System is in safe mode");
 printf("\n The given state is safe state");
-getch();
+return 0;
 }
